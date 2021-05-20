@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <head>
-        <meat charset="UTF-8" />
+        <meta charset="UTF-8">
         <link rel="stylecheet" href="styles.css" />
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
@@ -15,8 +15,8 @@
                 <header>
                     <a href="#"><img src="images/logo/Reservia.svg" alt="logo" /></a>
                     <nav>
-                        <li><a href="#accomodation">Hébergement</a></li>
-                        <li><a href="activities">Activités</a></li>
+                        <a href="#accomodation">Hébergement</a>
+                        <a href="activities">Activités</a>
                         <button id="signin">S'inscrire</button>
                     </nav>
                 </header>
@@ -29,9 +29,9 @@
                 
                 <!-- Section Recherche et filtre-->
                 <section id="search">
-                    <form method="post" action="#"></form>
+                    <form method="post" action="#">
                         <div class="mapmarker"><i class="fas fa-map-marker-alt"></i></div>
-                        <textarea type="search">Marseille, France</textarea>
+                        <textarea>Marseille, France</textarea>
                         <input type="submit" value="Rechercher" />
                     </form>
                     <div class="filter">
@@ -78,13 +78,22 @@
                         <a class="amina" href="#">
                             <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina" />
                             <h1>Hôtel chez Amina</h1>
-                            <p>Hôtel chez Amina</p>
+                            <p>Nuit à partir de 96€</p>
                         </a>
+                    </div>
+                    <div>
+                        <button>Afficher plus</button>
                     </div>
                 </section>
                 
                 <!-- Section les plus populaires-->
-                <section id="popular"></section>
+                <section id="popular">
+                    <h1>Les plus populaires</h1>
+                    <i class="fas fa-chart-line"></i>
+
+
+
+                </section>
                 
                 <!-- Section Activités-->
                 <section id="activities"></section>
