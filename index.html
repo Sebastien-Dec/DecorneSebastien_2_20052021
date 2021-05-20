@@ -5,22 +5,83 @@
         <link rel="stylecheet" href="styles.css" />
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/ada4a84f05.js" crossorigin="anonymous"></script>
         <title>Avec Reservia, trouvez votre hébergement pour des vacances de rêve</title>
     </head>
     <body>
             <div class="container"> <!-- Définir la largeur de la page-->
                 
                 <!-- Header-->
-                <header></header>
+                <header>
+                    <a href="#"><img src="images/logo/Reservia.svg" alt="logo" /></a>
+                    <nav>
+                        <li><a href="#accomodation">Hébergement</a></li>
+                        <li><a href="activities">Activités</a></li>
+                        <button id="signin">S'inscrire</button>
+                    </nav>
+                </header>
                 
                 <!-- Slogan du site-->
-                <section id="slogan"></section>
+                <section id="slogan">
+                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                    <p>En plein centre ville ou en pleine nature</p>
+                </section>
                 
                 <!-- Section Recherche et filtre-->
-                <section id="search"></section>
+                <section id="search">
+                    <form method="post" action="#"></form>
+                        <div class="mapmarker"><i class="fas fa-map-marker-alt"></i></div>
+                        <textarea type="search">Marseille, France</textarea>
+                        <input type="submit" value="Rechercher" />
+                    </form>
+                    <div class="filter">
+                        <h1>Filtres</h1>
+                        <a href="#"><i class="fas fa-money-bill-wave"></i>Economique</a>
+                        <a href="#"><i class="fas fa-child"></i>Familial</a>
+                        <a href="#"><i class="fas fa-heart"></i>Romantique</a>
+                        <a href="#"><i class="fas fa-dog"></i>Animaux autorisés</a>
+                    </div>
+                    <p><i class="fas fa-info-circle"></i>Plus de 500 logements sont disponibles dans cette ville</p> 
+                </section>
                 
                 <!-- Section Hébergement-->
-                <section id="accommodation"></section>
+                <section id="accommodation">
+                    <h1>Hébergements à Marseille</h1>
+                    <div>
+                        <a class="cannebiere" href="#">
+                            <img src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Auberge la Cannebière" />
+                            <h1>Auberge la Cannebière</h1>
+                            <p>Nuit à partir de 25€</p>
+                        </a>
+                        <a class="port" href="#">
+                            <img src="images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hôtel du port" />
+                            <h1>Hôtel du port</h1>
+                            <p>Nuit à partir de 52€</p>
+                        </a>
+                        <a class="mouettes" href="#">
+                            <img src="images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hôtel Les mouettes" />
+                            <h1>Hôtel Les mouettes</h1>
+                            <p>Nuit à partir de 76€</p>
+                        </a>
+                    </div>
+                    <div>
+                        <a class="mer" href="#">
+                            <img src="images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hôtel de la mer" />
+                            <h1>Hôtel de la mer</h1>
+                            <p>Nuit à partir de 46€</p>
+                        </a>
+                        <a class="panier" href="#">
+                            <img src="images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le Panier" />
+                            <h1>Auberge Le Panier</h1>
+                            <p>Nuit à partir de 23€</p>
+                        </a>
+                        <a class="amina" href="#">
+                            <img src="images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hôtel chez Amina" />
+                            <h1>Hôtel chez Amina</h1>
+                            <p>Hôtel chez Amina</p>
+                        </a>
+                    </div>
+                </section>
                 
                 <!-- Section les plus populaires-->
                 <section id="popular"></section>
