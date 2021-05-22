@@ -75,3 +75,65 @@ header {
 #slogan {
     padding-left: 70px;
 }
+
+/* Search */
+
+#search {
+    padding-left: 70px;
+    padding-top: 20px;
+}
+
+.searchbar {
+    display: flex;
+    flex-direction: column;
+    width: 419px;
+
+}
+
+.inputsearch {
+    display: flex;
+    flex-direction: row;  
+    height: 51px;
+}
+
+.mapmarker {
+    width: 51px;
+    border: 1px solid #f2f2f2;  
+    border-radius: 15px 0 0 15px;
+    background-color: #f2f2f2;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fa-map-marker-alt {
+    background-color: #f2f2f2;
+}
+
+.inputsearch input {
+    width: 235px;
+    border: 1px solid #f2f2f2;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.desktop {
+    border: 1px solid #f2f2f2;
+    border-radius: 0 15px 15px 0;
+    background-color: #0065fc;
+}
+
+button {
+    width: 135px;
+}
+
+button span {
+    background-color: #0065fc;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+button .fa-search {
+    display: none;
+}
