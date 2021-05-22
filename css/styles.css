@@ -1,0 +1,47 @@
+/* General */
+
+* {
+    background-color: #fff;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    color: black;
+}
+#container {
+    max-width: 1440px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.fa-star {
+    color: #0065fc;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    padding: 50px;
+}
+
+.navbar ul li {
+    display: table-cell;
+    border-top: 0 solid transparent;
+}
+
+.navbar a:hover {
+    color: #0065fc;
+    padding-top: 50px;
+    border-top: 2px solid #0065fc;
+}
+.login {
+    color: #0065fc;
+}
