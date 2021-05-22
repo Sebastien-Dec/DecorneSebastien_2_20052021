@@ -28,6 +28,15 @@ ul {
     color: #0065fc;
 }
 
+
+h1 {
+    font-size: 1em;
+}
+
+p {
+    font-size: 0.8em;
+}
+
 /* Header */
 
 header {
@@ -59,4 +68,10 @@ header {
 
 .login a {
     color: #0065fc;
+}
+
+/* Slogan */
+
+#slogan {
+    padding-left: 70px;
 }
