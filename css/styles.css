@@ -34,7 +34,7 @@ h1 {
 }
 
 p {
-    font-size: 0.8em;
+    font-size: 0.9em;
 }
 
 /* Header */
@@ -141,19 +141,29 @@ button .fa-search {
 
 /* filters */
 
-.filter {
-    display: flex;
+.e {
+    text-transform:uppercase;
 }
 
-.filter .fas {
+.filter {
+    display: flex;
+    padding-top: 33px;
+    padding-bottom:40px;
+}
+
+.filter i {
     color: #0065fc;
     background-color: #deebff;
     width: 50px;
     height: 50px;
     border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.iconfilter {
-    width: 22px;
-    position: ;
+.filter span {
+    display: flex;
+    align-items: center;
 }
+
