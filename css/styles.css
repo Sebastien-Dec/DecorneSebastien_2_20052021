@@ -180,3 +180,86 @@ button .fa-search {
     border-radius: 0 50px 50px 0;
     background: transparent;
 }
+
+.filter label:hover {
+    border: 6px groove #0065fc;
+    border-radius: 50px;
+    padding-right: 8px;
+}
+
+/* housing */
+
+#housing {
+    display: flex;
+    padding-left: 70px;
+}
+
+/* accomodation */
+
+.hotel {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+    width: 880px;
+    height: 624px;
+    border: 0 solid transparent;
+    border-radius: 25px;
+    background-color: #f2f2f2;
+}
+
+.acch1 {
+    position: relative;
+    left: 50px;
+    bottom: -70px;
+    font-size: 1.2em;
+    background-color: transparent;
+}
+
+.hotel h1 {
+    margin: 0;
+    padding-left: 16px;
+    padding-bottom: 5px;
+}
+
+.hotel p {
+    margin: 0;
+    padding-left: 16px;
+    padding-bottom: 5px;
+}
+.hotel a i:nth-child(4) {
+    padding-left: 16px;
+}
+
+.hotel a {
+    display: inline;
+    flex-wrap: wrap;
+    width: 247px;
+    height: 200px;
+    background-color: #fff;
+    border: 0 solid transparent;
+    border-radius: 25px;
+}
+
+.hotel a img {
+    display: flex;
+    justify-content: space-around;
+    width: 237px;
+    height: 115px;
+    border-radius: 25px 25px 0 0;
+    padding: 5px;    
+}
+
+/* more */
+
+.more {
+    position: relative;
+    left: 50px;
+    top: -40px;
+    width: 140px;
+    font-weight: bold;
+    background-color: transparent;
+}
+
+/* aside */
+
