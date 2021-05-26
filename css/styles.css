@@ -250,6 +250,26 @@ button .fa-search {
     padding: 5px;    
 }
 
+.cannebiere i:nth-child(8) {
+    color: #d9d9d9;
+}
+
+.mouettes i:nth-child(8) {
+    color: #d9d9d9;
+}
+
+.mer i:nth-child(7) {
+    color: #d9d9d9;
+}
+
+.mer i:nth-child(8) {
+    color: #d9d9d9;
+}
+
+.panier i:nth-child(8) {
+    color: #d9d9d9;
+}
+
 /* more */
 
 .more {
@@ -263,3 +283,8 @@ button .fa-search {
 
 /* aside */
 
+aside {
+    display: flex;
+    width: 419px;
+    height: 624px;
+}
