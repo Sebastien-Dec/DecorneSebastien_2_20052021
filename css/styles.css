@@ -144,7 +144,7 @@ button .fa-search {
 .filter {
     display: flex;
     padding-top: 33px;
-    padding-bottom:40px;
+    padding-bottom: 20px;
 }
 
 .filter h1 {
@@ -161,6 +161,7 @@ button .fa-search {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 .filter label {
