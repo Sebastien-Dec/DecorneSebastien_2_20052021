@@ -191,6 +191,8 @@ button .fa-search {
 
 #housing {
     display: flex;
+    justify-content: space-between;
+    align-items: center;   
     padding-left: 70px;
 }
 
@@ -227,6 +229,7 @@ button .fa-search {
     padding-left: 16px;
     padding-bottom: 5px;
 }
+
 .hotel a i:nth-child(4) {
     padding-left: 16px;
 }
@@ -283,8 +286,75 @@ button .fa-search {
 
 /* aside */
 
-aside {
+#popular {
     display: flex;
-    width: 419px;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 422px;
     height: 624px;
+    margin-top: 31px;
+    border: 0 solid transparent;
+    border-radius: 25px;
+    background-color: #f2f2f2;
+}
+
+.mostpopular {
+    background-color: #f2f2f2;
+    font-size: 1.2em;
+}
+
+.fa-chart-line {
+    background-color: #f2f2f2;
+    font-size: 1.2em;
+}
+
+.gd {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f2f2f2;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+s
+.mostpop {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.mostpop a {
+    display: flex;
+    align-items: center;
+    width: 345px;
+    height: 143px;
+    background-color: #fff;
+    border: 0 solid transparent;
+    border-radius: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#.mostpop a h1 {
+    margin: 0;
+}
+
+.mostpop a p {
+    margin-top: 10px;
+}
+
+.alignpopular {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.star {
+    margin-top: 20px;
+}
+
+.mostpop img {  
+    width: 128px;
+    height: 130px;
+    border-radius: 25px 0 0 25px;
+    padding: 5px; 
 }
