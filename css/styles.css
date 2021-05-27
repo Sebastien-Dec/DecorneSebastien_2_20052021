@@ -297,26 +297,11 @@ button .fa-search {
 
 /* aside */
 
-#popular {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 422px;
-    height: 624px;
-    margin-top: 31px;
-    border: 0 solid transparent;
+aside {
+    width: 420px;
+    height: 622px;
+    background-color: #f2f2f2;
     border-radius: 25px;
-    background-color: #f2f2f2;
-}
-
-.mostpopular {
-    background-color: #f2f2f2;
-    font-size: 1.2em;
-}
-
-.fa-chart-line {
-    background-color: #f2f2f2;
-    font-size: 1.2em;
 }
 
 .gd {
@@ -324,15 +309,26 @@ button .fa-search {
     align-items: center;
     justify-content: space-between;
     background-color: #f2f2f2;
-    padding-left: 20px;
-    padding-right: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    padding-top: 30px;
+}
+
+.mostpopular,
+.fa-chart-line {
+    background-color: #f2f2f2;
+    font-size: 1.2em;
 }
 
 .mostpop {
     display: flex;
-    flex-wrap: wrap; 
+    flex-direction: column;
+    justify-content: space-around;
     width: 345px;
-    height: 143px;  
+    height: 496px;  
+    padding-left: 40px;
+    padding-top: 10px;
+    background-color: transparent;
 }
 
 .mostpop a {
@@ -357,7 +353,9 @@ button .fa-search {
 .alignpopular {
     display: flex;
     flex-direction: column;
+    width: 144px;
     padding-left: 20px;
+    background-color: transparent;
 }
 
 .star {
