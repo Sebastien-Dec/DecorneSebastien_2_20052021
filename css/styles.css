@@ -241,6 +241,7 @@ button .fa-search {
     background-color: #fff;
     border: 0 solid #fff;
     border-radius: 25px;
+    box-shadow: 0 0 3px 3px #dbdbdb;
 }
 
 .hotel a h1,
@@ -266,23 +267,23 @@ button .fa-search {
     padding: 5px;    
 }
 
-.cannebiere i:nth-child(8) {
+.cannebiere .accstar i:nth-child(5) {
     color: #d9d9d9;
 }
 
-.mouettes i:nth-child(8) {
+.mouettes .accstar i:nth-child(5) {
     color: #d9d9d9;
 }
 
-.mer i:nth-child(7) {
+.mer .accstar i:nth-child(4) {
     color: #d9d9d9;
 }
 
-.mer i:nth-child(8) {
+.mer .accstar i:nth-child(5) {
     color: #d9d9d9;
 }
 
-.panier i:nth-child(8) {
+.panier .accstar i:nth-child(5) {
     color: #d9d9d9;
 }
 
@@ -339,7 +340,7 @@ aside {
     background-color: #fff;
     border: 0 solid transparent;
     border-radius: 25px;
-    
+    box-shadow: 0 0 3px 3px #dbdbdb;
 }
 
 .mostpop a h1 {
@@ -368,3 +369,14 @@ aside {
     border-radius: 25px 0 0 25px;
     padding: 5px; 
 }
+
+.coeur .star i:nth-child(5) {
+    color: #f2f2f2;
+}
+
+.bleu .star i:nth-child(5) {
+    color: #f2f2f2;
+}
+
+/* activities */
+
