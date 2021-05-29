@@ -14,6 +14,7 @@ body {
 #container {
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 a {
@@ -64,7 +65,7 @@ header {
 
 .navbar a:hover {
     color: #0065fc;
-    padding-top: 70px;
+    padding-top: 14px;
     border-top: 2px solid #0065fc;
 }
 
@@ -75,6 +76,10 @@ header {
 .login a {
     color: #0065fc;
 }
+ .login a:hover {
+     color: black;
+     border: transparent;
+ }
 
 /* Slogan */
 
@@ -562,14 +567,98 @@ footer ul li {
 
 /* Responsive Tablet */
 
-@media only screen and (max-width: 1024px)
+@media screen and (max-width: 1024px)
 {
 
 }
 
 /* Responsive Telephone */
 
-@media only screen and (max-width: 600px)
+@media screen and (max-width: 600px)
 {
+    /* header */
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        padding: 0px;
+        width: 100%;
+        height: 131px;
+        border-bottom: 2px solid #f2f2f2;
+    }
+
+    .logo {
+        position: relative;
+        left: 19px;
+        top: 30px;
+    }
+
+    .login {
+        position: relative;
+        top: 30px;
+        right: 50px;
+    }
+
+    .accomodation,
+    .activities {
+        position: relative;
+        top: 90px;
+        left: -120px;
+    }
+
+    .activities {
+        left: 50px;
+    }
+
+    .accomodation a:hover,
+    .activities a:hover {
+        border-top: transparent;
+        border-bottom: 2px solid #0065fc;
+        padding-bottom: 6px;
+    }
+
+    /* Slogan */
+
+    #slogan {
+        position: relative;
+        left: 19px;
+        padding: 0px;
+        width: 291px;
+    }
+
+    /* Search */
+
+    #search {
+        position: relative;
+        left: 19px;
+        padding: 0px;
+    }
+
+    button span {
+        display: none;
+    }
+
+    button .fa-search {
+        display: contents;
+        color: white;
+    }
+
+    .desktop {
+        position: relative;
+        left: -8px;
+        width: 51px;
+        border-radius: 15px;
+
+    }
+
+    .inputsearch input {
+        width: 230px;
+        border-right: transparent ;
+        padding: 17px;
+    }
+
+    /* Filters */
+
     
 }
