@@ -1,20 +1,15 @@
 /* General */
 
 * {
-    background-color: #fff;
     font-family: 'Raleway', sans-serif;
 }
 
 body {
     color: black;
-    max-width: 1440px;
-    max-height: 1884px;
     margin: auto;
 }
 #container {
-    display: flex;
-    flex-direction: column;
-    position: relative;
+    margin: 0px 50px;
 }
 
 a {
@@ -51,72 +46,65 @@ header {
     padding-right: 48px;
     justify-content: space-between;
 }
+.logo {
+    margin-top: 50px;
+}
 
 .navbar ul {
     display: flex;
 }
 
 .navbar ul li {
-    display: inline;
-    border-top: 0 solid #0065fc;
-    width: 162px;
     text-align: center;
+    margin-left: 40px;
+    padding: 40px 15px 0px 15px;
+}
+
+.navbar li:hover {
+    border-top: 1px solid #0065fc;
 }
 
 .navbar a:hover {
     color: #0065fc;
-    padding-top: 14px;
-    border-top: 2px solid #0065fc;
-}
-
-.login {
-    width: 118px !important;
 }
 
 .login a {
     color: #0065fc;
 }
+
  .login a:hover {
      color: black;
-     border: transparent;
  }
 
 /* Slogan */
 
 #slogan {
-    padding-left: 48px;
-    padding-right: 48px;
+    margin-top: 50px;
+}
+
+#slogan h1 {
+    margin-bottom: 0px;
+}
+
+#slogan p {
+    margin-top: 5px;
 }
 
 /* Search */
 
 #search {
-    padding-left: 48px;
-    padding-right: 48px;
-    padding-top: 20px;
-}
-
-.searchbar {
-    display: flex;
-    flex-direction: column;
-    width: 419px;
-
+    margin-top: 20px;
 }
 
 .inputsearch {
     display: flex;
-    flex-direction: row;  
-    height: 51px;
 }
 
 .mapmarker {
-    width: 51px;
-    border: 1px solid #f2f2f2;  
+    border: 1px solid #f2f2f2;
     border-radius: 15px 0 0 15px;
-    background-color: #f2f2f2;   
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 20px;
+    background-color: #f2f2f2;
 }
 
 .fa-map-marker-alt {
@@ -124,7 +112,6 @@ header {
 }
 
 .inputsearch input {
-    width: 235px;
     border: 1px solid #f2f2f2;
     font-weight: bold;
     font-size: 1.2em;
@@ -156,8 +143,7 @@ button .fa-search {
 
 .filter {
     display: flex;
-    padding-top: 33px;
-    padding-bottom: 20px;
+    margin: 20px 0px;
 }
 
 .filter h1 {
@@ -165,42 +151,32 @@ button .fa-search {
 }
 
 .filter i {
-    margin: 8px;
+    padding: 20px;
     color: #0065fc;
     background-color: #deebff;
-    width: 50px;
-    height: 50px;
     border-radius: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
 }
 
 .filter label {
-    display: flex;
-    align-items: center;
+    border: 3px solid #f2f2f2;
+    border-radius: 50px;
+    margin: 0 24px;
+}
+
+.filter :nth-child(2) {
+    margin-left: 32px;
 }
 
 .filter input {
     font-size: 1.2em;
     font-weight: bold;
-    margin-left: -30px;
-    height: 50px;
-    padding: 0 25px 0 37.5px;
-    border : 3px solid #d9d9d9;
-    border-left: 3px transparent;
-    border-radius: 0 50px 50px 0;
-    background: transparent;
+    margin: 0px 10px;
+    border: 0;
+    background-color: transparent;
 }
 
-.filter label:hover {
-    border: 2px groove #0065fc;
-    border-radius: 50px;
-    padding-right: 8px;
-}
-
-.filter input:hover {
+.filter label>input:hover {
+    color: #0065fc;
     cursor: pointer;
 }
 
@@ -220,12 +196,8 @@ button .fa-search {
 .fa-info {
     font-size: 0.8em;
     color: #0065fc;
-    width: 25px;
-    height: 25px;
-    padding-top: 12.5px;
-    padding-left: 6.25px;
-    padding-right: 6.25px;
-    border: 2px solid #f2f2f2;
+    padding: 15px 20px;
+    border: 3px solid #f2f2f2;
     border-radius: 100%;
 }
 
@@ -233,24 +205,16 @@ button .fa-search {
 
 #housing {
     display: flex;
-    justify-content: space-between;
-    align-items: center;   
-    width: 1342px;
-    height: 622px;
-    padding-left: 48px;
-    padding-right: 48px;
+    justify-content: space-evenly;
 }
 
 /* accomodation */
 
 #housing section {
-    display: flex;
-    flex-direction: column;
-    width: 880px;
-    height: 622px;
     border: 0 solid transparent;
     border-radius: 25px;
     background-color: #f2f2f2;
+    margin-right: 40px;
 }
 
 .acch1,
@@ -261,53 +225,40 @@ button .fa-search {
 
 .acch1 {
     font-size: 1.2em;
-    padding-left: 30px;
-    padding-top: 30px;
+    margin: 35px 0px 0px 35px;
 }
 
 .hotel {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: 796px;
-    height: 428px;
     padding: 20px;
-    background-color: transparent;
 }
 
 .hotel a {
-    display: flex;
-    flex-direction: column;
     margin-bottom: 30px;
-    width: 247px;
     height: 200px;
     background-color: #fff;
     border: 0 solid #fff;
     border-radius: 25px;
-    box-shadow: 0 0 3px 3px #dbdbdb;
+    box-shadow: 0 0 1px 1px #dbdbdb;
 }
 
 .hotel a h1,
 .hotel a p {
-    margin: 0;
-    padding-left: 10px;
-    padding-top: 5px;
+    margin: 0px 0px 4px 20px;
 }
 
 .accstar {
-    display: flex;
-    margin-left: 10px;
-    width: 66px;
-    padding-top: 5px;
+    margin-left: 15px;
 }
 
 .hotel a img {
-    display: flex;
-    justify-content: space-around;
+    object-fit: cover;
     width: 237px;
     height: 115px;
     border-radius: 25px 25px 0 0;
-    padding: 5px;    
+    padding: 5px;
 }
 
 .cannebiere .accstar i:nth-child(5) {
@@ -334,16 +285,13 @@ button .fa-search {
 
 .more {
     font-weight: bold;
-    background-color: transparent;
-    padding-left: 30px;
-    padding-top: 10px;
+    margin-left: 40px;
+    margin-bottom: 50px;
 }
 
 /* aside */
 
 aside {
-    width: 420px;
-    height: 622px;
     background-color: #f2f2f2;
     border-radius: 25px;
 }
@@ -352,7 +300,6 @@ aside {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #f2f2f2;
     margin-left: 40px;
     margin-right: 40px;
     padding-top: 30px;
@@ -360,30 +307,20 @@ aside {
 
 .mostpopular,
 .fa-chart-line {
-    background-color: #f2f2f2;
     font-size: 1.2em;
 }
 
 .mostpop {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 345px;
-    height: 496px;  
-    padding-left: 40px;
-    padding-top: 10px;
-    background-color: transparent;
+    padding: 0px 40px 0px 40px;
 }
 
 .mostpop a {
     display: flex;
     align-items: center;
-    width: 345px;
-    height: 143px;
     background-color: #fff;
-    border: 0 solid transparent;
     border-radius: 25px;
-    box-shadow: 0 0 3px 3px #dbdbdb;
+    box-shadow: 0 0 2px 2px #dbdbdb;
+    margin-bottom: 32px;
 }
 
 .mostpop a h1 {
@@ -424,66 +361,44 @@ aside {
 /* activities */
 
 #activities {
-    display: flex;
-    flex-direction: column;
-    width: 1342px;
-    height: 600px;
-    padding-left: 48px;
-    padding-right: 48px;
-    margin-top: 70px;
+    margin: 70px 0px 50px 0px;
 }
 
 #activities h1 {
     font-size: 1.2em;
-    margin-bottom: 30px;
 }
 
 .image {
     display: flex;
     justify-content: space-between;
-    width: 1342px;
-    height: 440px;
 }
 
 .image h1 {
     padding-left: 20px;
 }
 
-.image a {
-    display: flex;
-    flex-direction: column;
+.oneimage>a,
+.twoimages>a {
     border-radius: 25px;
-    box-shadow: 0 0 3px 3px #f4f4f4;
-}
-
-.oneimage {
-    display: flex;
-    flex-direction: column;
-    width: 308px;
-    height: 440px;
-    border-radius: 25px;
-    background-color: #f2f2f2;
-    box-shadow: 0 0 3px 3px #f4f4f4;
+    box-shadow: 0 0 2px 2px #f4f4f4;
+    border: 1px solid #f2f2f2;
 }
 
  .oneimage img {
      width: 308px;
      height: 388px;
      border-radius: 25px 25px 0 0;
+     object-fit: cover;
+ }
+
+ .twoimages img {
+     object-fit: cover;
  }
 
 .twoimages {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 308px;
-    height:440px;
-}
-
-.fort {
-    width: 308px;
-    height: 238px;
-    margin-bottom: 55px;
 }
 
 .fort img {
@@ -492,32 +407,16 @@ aside {
     border-radius: 25px 25px 0 0;
 }
 
-.frioul {
-    width: 308px;
-    height: 164px;
-}
-
 .frioul img {
     width: 308px;
     height: 110px;
     border-radius: 25px 25px 0 0;
 }
 
-.garde {
-    width: 308px;
-    height: 194px;
-    margin-bottom: 50px;
-}
-
 .garde img {
     width: 308px;
     height: 142px;
     border-radius: 25px 25px 0 0;
-}
-
-.longchamp {
-    width: 308px;
-    height: 212px;
 }
 
 .longchamp img {
@@ -531,11 +430,8 @@ aside {
 footer {
     display: flex;
     justify-content: space-around;
-    width: 1440px;
-    height: 206px;
     background-color: #f2f2f2;
 }
-
 .about,
 .accomodations,
 .assistance {
@@ -567,14 +463,14 @@ footer ul li {
 
 /* Responsive Tablet */
 
-@media screen and (max-width: 1024px)
+@media screen and (max-width: 991px)
 {
 
 }
 
 /* Responsive Telephone */
 
-@media screen and (max-width: 600px)
+@media screen and (max-width: 768px)
 {
     /* header */
 
@@ -660,5 +556,5 @@ footer ul li {
 
     /* Filters */
 
-    
+
 }
