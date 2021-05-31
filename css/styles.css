@@ -8,9 +8,6 @@ body {
     color: black;
     margin: auto;
 }
-#container {
-    margin: 0px 50px;
-}
 
 a {
     text-decoration: none;
@@ -42,8 +39,7 @@ p {
 
 header {
     display: flex;
-    padding-left: 48px;
-    padding-right: 48px;
+    margin: 0px 50px;
     justify-content: space-between;
 }
 .logo {
@@ -80,7 +76,7 @@ header {
 /* Slogan */
 
 #slogan {
-    margin-top: 50px;
+    margin: 50px;
 }
 
 #slogan h1 {
@@ -95,6 +91,7 @@ header {
 
 #search {
     margin-top: 20px;
+    margin-left: 50px;
 }
 
 .inputsearch {
@@ -113,7 +110,7 @@ header {
 }
 
 .inputsearch input {
-    border: 1px solid #f2f2f2;
+    border: 1px solid #d9d9d9;
     font-weight: bold;
     font-size: 1.2em;
     padding: 17px;
@@ -125,18 +122,18 @@ header {
     background-color: #0065fc;
 }
 
-button {
+.desktop {
     padding: 0 15px;
 }
 
-button span {
+.desktop {
     background-color: #0065fc;
     color: white;
     font-weight: bold;
     font-size: 1.2em;
 }
 
-button .fa-search {
+.desktop .fa-search {
     display: none;
 }
 
@@ -156,17 +153,17 @@ button .fa-search {
     color: #0065fc;
     background-color: #deebff;
     border-radius: 100%;
-    margin: -3px 0px -3px -2px;
+    margin: -2px 0px -2px -2px;
 }
 
 .filter label {
-    border: 3px solid #f2f2f2;
+    border: 3px solid #d9d9d9;
     border-radius: 50px;
-    margin: 0 24px;
+    margin: 0 10px;
 }
 
 .filter :nth-child(2) {
-    margin-left: 32px;
+    margin-left: 25px;
 }
 
 .filter input {
@@ -200,7 +197,7 @@ button .fa-search {
     font-size: 0.8em;
     color: #0065fc;
     padding: 15px 20px;
-    border: 3px solid #f2f2f2;
+    border: 3px solid #d9d9d9;
     border-radius: 100%;
 }
 
@@ -209,9 +206,14 @@ button .fa-search {
 #housing {
     display: flex;
     justify-content: space-evenly;
+    margin: 0px 50px;
 }
 
 /* accomodation */
+
+.price {
+    font-weight: bold;
+}
 
 #housing section {
     border-radius: 25px;
@@ -356,7 +358,7 @@ aside {
 /* activities */
 
 #activities {
-    margin: 70px 0px 60px 0px;
+    margin: 70px 50px 60px 50px;
 }
 
 #activities h1 {
@@ -366,7 +368,7 @@ aside {
 
 .image {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .image h1 {
@@ -429,23 +431,19 @@ aside {
 
 footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     background-color: #f2f2f2;
-    margin: 0px -50px 0px -50px;
 }
+
 .about,
 .accomodations,
 .assistance {
-    margin-right: 165px;
-}
-
-footer ul {
-    margin-left: -90px
+    margin-right: 300px;
 }
 
 footer h1 {
     margin-top: 40px;
-    margin-left: -50px;
+    padding-left: 40px;
 }
 
 footer ul li {
@@ -461,91 +459,129 @@ footer ul li {
 
 /* Responsive Telephone */
 
-/*@media screen and (max-width: 768px)
-{
+@media screen and (max-width: 768px) {
+   
     /* header */
 
-    /*header {
-        display: flex;
-        justify-content: space-between;
+    header {
+        display: block;
+        margin: 0;
         position: relative;
-        padding: 0px;
-        width: 100%;
-        height: 131px;
-        border-bottom: 2px solid #f2f2f2;
+        border-bottom: 3px solid #f2f2f2;
     }
 
     .logo {
         position: relative;
-        left: 19px;
-        top: 30px;
     }
 
-    .login {
+    .accomodation a,
+    .activities a {
         position: relative;
-        top: 30px;
-        right: 50px;
     }
 
-    .accomodation,
-    .activities {
+    .login a {
         position: relative;
-        top: 90px;
-        left: -120px;
-    }
-
-    .activities {
-        left: 50px;
-    }
-
-    .accomodation a:hover,
-    .activities a:hover {
-        border-top: transparent;
-        border-bottom: 2px solid #0065fc;
-        padding-bottom: 6px;
     }
 
     /* Slogan */
 
-    /*#slogan {
+    #slogan {
+        margin: 0;
         position: relative;
-        left: 19px;
-        padding: 0px;
-        width: 291px;
+        left: 10px;
     }
 
     /* Search */
 
-    /*#search {
+    #search {
+        margin: 0;
         position: relative;
-        left: 19px;
-        padding: 0px;
+        left: 10px;
     }
 
-    button span {
+    .searchbutton {
         display: none;
     }
 
-    button .fa-search {
-        display: contents;
-        color: white;
-    }
-
-    .desktop {
-        position: relative;
-        left: -8px;
-        width: 51px;
-        border-radius: 15px;
-
-    }
-
-    .inputsearch input {
-        width: 230px;
-        border-right: transparent ;
-        padding: 17px;
+    .desktop .fa-search {
+        display: block;
     }
 
     /* Filters */
 
+    .filter {
+        flex-wrap: wrap;
+        justify-content: space-evenly
+        margin: 0;
+    }
+
+    .filter :nth-child(2) {
+        margin-left: 0;
+    }
+
+    /* Info */
+
+    .info {
+        position: relative;
+        left: 10px;
+        margin: 0;
+        text-align: left;
+    }
+
+    /* Housing */
+
+    #housing {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    #housing section {
+        background-color: transparent;
+        margin-right: 0;
+    }
+
+    aside {
+        order: -1;
+    }
+
+    /* More */
+
+    .more {
+        margin-bottom: 0;
+    }
+
+    /* Activities */
+
+    #activities {
+        margin-top: 50px;
+    }
+
+    .image {
+        flex-direction: column;
+    }
+
+    .oneimage img,
+    .twoimages img {
+        width: 335px;
+        height: 135px;
+    }
+
+    .twoimages a {
+        width: 335px;
+    }
+
+    /* Footer */
+
+    footer {
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .about,
+.accomodations,
+.assistance {
+    margin-right: 0;
+}
 
 }
