@@ -35,6 +35,10 @@ p {
     font-size: 0.9em;
 }
 
+br {
+    display: none;
+}
+
 /* Header */
 
 header {
@@ -82,7 +86,7 @@ header {
 #slogan h1 {
     margin-bottom: 0px;
 }
-
+ 
 #slogan p {
     margin-top: 5px;
 }
@@ -149,28 +153,37 @@ header {
 }
 
 .filter i {
-    padding: 20px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
     color: #0065fc;
     background-color: #deebff;
-    border-radius: 100%;
-    margin: -2px 0px -2px -2px;
+    border-radius: 30px;
+    position: relative;
+    right: 4px;
+    bottom: 3px;
 }
 
 .filter label {
     border: 3px solid #d9d9d9;
-    border-radius: 50px;
-    margin: 0 10px;
-}
-
-.filter :nth-child(2) {
-    margin-left: 25px;
+    border-radius: 36px;
+    height: 55px;
+    position: relative;
+    padding-right: 55px;
+    left: 25px;
+    margin-right: 20px;
 }
 
 .filter input {
+    position: relative;
+    bottom: 43px;
+    display: table-row;
+    left: 65px;
     font-size: 1.2em;
     font-weight: bold;
-    margin-right: 25px;
-    margin-left: 15px;
+    margin-right: 30px;
     border: 0;
     background-color: transparent;
 }
@@ -218,7 +231,7 @@ header {
 #housing section {
     border-radius: 25px;
     background-color: #f2f2f2;
-    margin-right: 40px;
+    margin-right: 50px;
 }
 
 .acch1 {
@@ -229,12 +242,13 @@ header {
 .hotel {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 20px;
 }
 
 .hotel a {
     margin-bottom: 30px;
+    padding: 10px;
     background-color: #fff;
     border-radius: 25px;
     box-shadow: 0 0 2px 2px #dbdbdb;
@@ -282,8 +296,8 @@ header {
 
 .more {
     font-weight: bold;
-    margin-left: 40px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    margin-left: 80px;
 }
 
 /* aside */
@@ -299,7 +313,7 @@ aside {
     justify-content: space-between;
     margin-left: 40px;
     margin-right: 40px;
-    padding-top: 30px;
+    padding-top: 20px;
 }
 
 .mostpopular,
@@ -308,7 +322,7 @@ aside {
 }
 
 .mostpop {
-    padding: 0px 40px 0px 40px;
+    padding: 0px 40px;
 }
 
 .mostpop a {
@@ -461,42 +475,71 @@ footer ul li {
 
 @media screen and (max-width: 768px) {
    
+    /* General*/
+
+    br {
+        display: block;
+    }
+
     /* header */
 
     header {
         display: block;
-        margin: 0;
-        position: relative;
-        border-bottom: 3px solid #f2f2f2;
+        margin: 0;    
+        border-bottom: 3px solid #f2f2f2;    
     }
 
     .logo {
         position: relative;
+        left: 20px;
+        top: 10px;
     }
 
-    .accomodation a,
-    .activities a {
-        position: relative;
+    .navbar ul {
+        justify-content: space-between;        
     }
 
-    .login a {
+    .navbar ul li {
+        margin-left: 0;
+        padding: 0;
+    }
+
+    .navbar ul li:nth-child(3) {
         position: relative;
+        bottom: 40px;
+        right: 70px;
+    }
+
+    .navbar a:hover {
+        border-bottom: 3px solid #0065fc;
+        padding-bottom: 16px;
+    }
+
+    .accomodation:hover,
+    .activities:hover {
+        border-top: 0;
     }
 
     /* Slogan */
 
     #slogan {
         margin: 0;
-        position: relative;
-        left: 10px;
+        padding-left: 10px;
     }
 
+    #slogan h1 {
+        font-size: 1.3em;
+        padding-bottom: 20px;
+    }
+    
     /* Search */
 
     #search {
-        margin: 0;
-        position: relative;
-        left: 10px;
+        margin: 50px 0px 0px 10px;
+    }
+
+    .inputsearch input {
+        padding: 10px;
     }
 
     .searchbutton {
@@ -511,21 +554,27 @@ footer ul li {
 
     .filter {
         flex-wrap: wrap;
-        justify-content: space-evenly
-        margin: 0;
     }
 
-    .filter :nth-child(2) {
-        margin-left: 0;
+    .filter label {
+        margin-top: 20px;
     }
 
     /* Info */
 
     .info {
-        position: relative;
-        left: 10px;
-        margin: 0;
         text-align: left;
+        font-size: 1.1em;
+    }
+
+    .fa-info {
+        float: left;
+        font-size: 0.5em;
+        color: #0065fc;
+        padding: 5px;
+        border: 3px solid #d9d9d9;
+        border-radius: 100%;
+        margin-right: 5px;
     }
 
     /* Housing */
@@ -541,8 +590,20 @@ footer ul li {
         margin-right: 0;
     }
 
+    .hotel {
+        padding: 0;
+    }
+
+    .hotel a img {
+        width: 335px;
+    }
+
     aside {
         order: -1;
+    }
+
+    .mostpop {
+        padding: 10px;
     }
 
     /* More */
@@ -554,21 +615,28 @@ footer ul li {
     /* Activities */
 
     #activities {
-        margin-top: 50px;
+        margin: 50px 0px 0px 0px;
+        padding-left: 10px;
     }
 
     .image {
         flex-direction: column;
     }
 
-    .oneimage img,
-    .twoimages img {
-        width: 335px;
+    .oneimage>a,
+    twoimages>a {
+        margin-bottom: 20px;
+    }
+
+    .oneimage a img,
+    .twoimages a img {
+        width: 360px;
         height: 135px;
     }
 
     .twoimages a {
-        width: 335px;
+        width: 360px;
+        margin-bottom: 20px;
     }
 
     /* Footer */
