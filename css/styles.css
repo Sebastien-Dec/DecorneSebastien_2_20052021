@@ -52,12 +52,12 @@ header {
 
 .navbar ul {
     display: flex;
+    margin-top: 0;
 }
 
 .navbar ul li {
-    text-align: center;
     margin-left: 40px;
-    padding: 40px 15px 0px 15px;
+    padding: 50px 15px 0px 15px;
 }
 
 .accomodation:hover,
@@ -123,18 +123,11 @@ header {
 .desktop {
     border: 1px solid #0065fc;
     border-radius: 0 15px 15px 0;
-    background-color: #0065fc;
-}
-
-.desktop {
-    padding: 0 15px;
-}
-
-.desktop {
-    background-color: #0065fc;
     color: white;
     font-weight: bold;
     font-size: 1.2em;
+    background-color: #0065fc;
+    padding: 0 15px;
 }
 
 .desktop .fa-search {
@@ -190,6 +183,7 @@ header {
 
 .filter label>input:hover {
     color: #0065fc;
+    background-color: #d9d9d9;
     cursor: pointer;
 }
 
@@ -228,7 +222,7 @@ header {
     font-weight: bold;
 }
 
-#housing section {
+#accommodation {
     border-radius: 25px;
     background-color: #f2f2f2;
     margin-right: 50px;
@@ -247,8 +241,7 @@ header {
 }
 
 .hotel a {
-    margin-bottom: 30px;
-    padding: 10px;
+    margin: 0px 10px 30px 10px;
     background-color: #fff;
     border-radius: 25px;
     box-shadow: 0 0 2px 2px #dbdbdb;
@@ -261,7 +254,6 @@ header {
 
 .accstar {
     margin-left: 20px;
-    padding-bottom: 10px;
 }
 
 .hotel a img {
@@ -298,6 +290,10 @@ header {
     font-weight: bold;
     margin-bottom: 30px;
     margin-left: 80px;
+}
+
+.more a:hover {
+    color: #0065fc
 }
 
 /* aside */
@@ -347,7 +343,6 @@ aside {
     flex-direction: column;
     width: 144px;
     padding-left: 20px;
-    background-color: transparent;
 }
 
 .star {
@@ -496,7 +491,8 @@ footer ul li {
     }
 
     .navbar ul {
-        justify-content: space-between;        
+        justify-content: space-between;   
+        margin-top: 20px;     
     }
 
     .navbar ul li {
@@ -553,11 +549,39 @@ footer ul li {
     /* Filters */
 
     .filter {
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: 50% 50%;
     }
 
     .filter label {
         margin-top: 20px;
+        left: 0;
+        width: fit-content;
+    }
+
+    #economic {
+        grid-row: 2;
+        padding-left: 0;
+    }
+
+    #family {
+        grid-column: 2;
+        grid-row: 2;
+        margin-left: 30px;
+        padding-right: 20px;
+    }
+
+    #family input {
+        margin-right: 0;
+        left: 25px;
+    }
+    
+    #romantic {
+        grid-row: 3;
+    }
+
+    #animals {
+        grid-row: 4;
     }
 
     /* Info */
