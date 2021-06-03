@@ -134,6 +134,10 @@ header {
     display: none;
 }
 
+.desktop:hover {
+    cursor: pointer;
+}
+
 /* filters */
 
 .filter {
@@ -243,6 +247,7 @@ header {
 
 .hotel a {
     margin: 0px 10px 30px 10px;
+    padding-bottom: 5px;
     background-color: #fff;
     border-radius: 25px;
     box-shadow: 0 0 2px 2px #dbdbdb;
