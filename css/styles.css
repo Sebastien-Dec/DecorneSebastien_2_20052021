@@ -147,37 +147,31 @@ header {
 
 .filter h1 {
     font-size: 1.2em;
+    margin-right: 20px;
 }
 
 .filter i {
-    width: 60px;
-    height: 60px;
-    text-align: center;
-    display: table-cell;
-    vertical-align: middle;
     color: #0065fc;
     background-color: #deebff;
     border-radius: 30px;
-    position: relative;
-    right: 4px;
-    bottom: 3px;
+    margin-left: -1px;
+    padding: 20px;
 }
 
 .filter label {
     border: 3px solid #d9d9d9;
     border-radius: 36px;
-    height: 55px;
-    position: relative;
-    padding-right: 55px;
+    border-left: none;
     left: 25px;
     margin-right: 20px;
 }
 
+.family i {
+    padding-left: 19px;
+    padding-right: 23px;
+}
+
 .filter input {
-    position: relative;
-    bottom: 43px;
-    display: table-row;
-    left: 65px;
     font-size: 1.2em;
     font-weight: bold;
     margin-right: 30px;
@@ -185,9 +179,14 @@ header {
     background-color: transparent;
 }
 
-.filter label>input:hover {
-    color: #0065fc;
-    background-color: #d9d9d9;
+.filter input:hover {
+    color: #fff;
+    cursor: pointer;
+}
+
+.filter label:hover {
+    background-color: #0065fc;
+    color: white;
     cursor: pointer;
 }
 
@@ -231,6 +230,7 @@ header {
     border-radius: 25px;
     background-color: #f2f2f2;
     margin-right: 50px;
+    width: 70%;
 }
 
 .acch1 {
@@ -307,14 +307,14 @@ header {
 aside {
     background-color: #f2f2f2;
     border-radius: 25px;
+    width: 30%;
 }
 
 .gd {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin: 0px 40px 20px 40px;
     padding-top: 20px;
 }
 
@@ -345,8 +345,6 @@ aside {
 }
 
 .alignpopular {
-    display: flex;
-    flex-direction: column;
     width: 144px;
     padding-left: 20px;
 }
@@ -467,20 +465,20 @@ footer ul li {
 
 /* For Big Screen */
 
-@media screen and (min-width: 1199px)
+/*@media screen and (min-width: 1199px)
 {
     body {
         max-width: 1440px;
     }
-}
+}*/
 
 /* Responsive Tablet */
 
-@media screen and (max-width: 991px)
+/*@media screen and (max-width: 991px)
 {
     /* Housing */
 
-    #housing {
+    /*#housing {
         display: grid;
     }
 
@@ -490,7 +488,7 @@ footer ul li {
     }
     /* Popular */
 
-    #popular {
+    /*#popular {
         grid-row: 1;
     }
 
@@ -506,7 +504,7 @@ footer ul li {
 
     /* Filter */
 
-    .filter {
+    /*.filter {
         display: grid;
     }
 
@@ -535,7 +533,7 @@ footer ul li {
 
    /* Activities */
     
-    .oneimageone {
+    /*.oneimageone {
         grid-area: oneimageone;
     }
 
@@ -574,10 +572,10 @@ footer ul li {
 
     /* Footer */
 
-    .about, .accomodations, .assistance {
+    /*.about, .accomodations, .assistance {
          margin-right: 0;
     }
-}
+}*/
 
 /* Responsive Telephone */
 
@@ -593,8 +591,12 @@ footer ul li {
 
     header {
         display: block;
-        margin: 0;    
-        border-bottom: 3px solid #f2f2f2;    
+        margin: 0;     
+    }
+    
+    .active {
+        border-bottom: 3px solid #0065fc;
+        padding-bottom: 16px;
     }
 
     .logo {
@@ -606,17 +608,23 @@ footer ul li {
     .navbar ul {
         justify-content: space-between;   
         margin-top: 20px;     
+        padding-left: 0;
     }
 
     .navbar ul li {
-        margin-left: 0;
-        padding: 0;
+        width: 50%;
+        margin: 0;
+        text-align: center;
+        padding: 10px;
+    }
+    .activities {
+        border-bottom: 5px solid #f2f2f2;
     }
 
     .navbar ul li:nth-child(3) {
-        position: relative;
-        bottom: 40px;
-        right: 70px;
+        position: absolute;
+        right: 0;
+        top: 20px;
     }
 
     .navbar a:hover {
@@ -627,6 +635,10 @@ footer ul li {
     .accomodation:hover,
     .activities:hover {
         border-top: 0;
+    }
+
+    .login:hover {
+        border: none;
     }
 
     /* Slogan */
@@ -662,39 +674,25 @@ footer ul li {
     /* Filters */
 
     .filter {
-        display: grid;
-        grid-template-columns: 50% 50%;
+        flex-wrap: wrap;
     }
 
     .filter label {
         margin-top: 20px;
         left: 0;
-        width: fit-content;
+        margin-right: 0;
+        font-size: small;
+    }
+    .filter h1 {
+        width: 100%;
     }
 
     .economic {
-        grid-row: 2;
         padding-left: 0;
     }
 
     .family {
-        grid-column: 2;
-        grid-row: 2;
-        margin-left: 30px;
-        padding-right: 20px;
-    }
-
-    .family input {
-        margin-right: 0;
-        left: 25px;
-    }
-
-    .romantic {
-        grid-row: 3;
-    }
-
-    .animals {
-        grid-row: 4;
+        margin-left: 10px;
     }
 
     /* Info */
@@ -725,6 +723,11 @@ footer ul li {
     #housing section {
         background-color: transparent;
         margin-right: 0;
+        width: 100%;
+    }
+
+    .acch1 {
+        margin-bottom: 20px;
     }
 
     .hotel {
@@ -737,10 +740,12 @@ footer ul li {
 
     aside {
         order: -1;
+        width: 100%;
     }
 
     .mostpop {
         padding: 10px;
+        flex-direction: column;
     }
 
     /* More */
