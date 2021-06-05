@@ -510,24 +510,24 @@ footer ul li {
         display: grid;
     }
 
-    #economic {
+    .economic {
         grid-row: 2;
         width: fit-content;
         margin-bottom: 20px;
     }
 
-    #family {
+    .family {
         grid-column: 2;
         grid-row: 2;
         width: fit-content;
     }
 
-    #romantic {
+    .romantic {
         grid-row: 3;
     width: fit-content;
     }
 
-    #animals{
+    .animals{
         grid-column: 2;
         grid-row: 3;
         width: fit-content;
@@ -672,28 +672,28 @@ footer ul li {
         width: fit-content;
     }
 
-    #economic {
+    .economic {
         grid-row: 2;
         padding-left: 0;
     }
 
-    #family {
+    .family {
         grid-column: 2;
         grid-row: 2;
         margin-left: 30px;
         padding-right: 20px;
     }
 
-    #family input {
+    .family input {
         margin-right: 0;
         left: 25px;
     }
 
-    #romantic {
+    .romantic {
         grid-row: 3;
     }
 
-    #animals {
+    .animals {
         grid-row: 4;
     }
 
