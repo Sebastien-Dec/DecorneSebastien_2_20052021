@@ -445,11 +445,9 @@ footer ul li {
     }
 
     .filter label {
-        margin-top: 20px;
-        left: 0;
-        margin-right: 0;
         font-size: small;
     }
+
     .filter h1 {
         width: 100%;
     }
@@ -460,6 +458,94 @@ footer ul li {
 
     .family {
         margin-left: 10px;
+    }
+
+    /* Housing */
+
+    #housing {
+        flex-direction: column;
+        margin: 0 50px;
+    }
+    /* Accommodation */
+
+    #accommodation {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .hotel {
+        font-size: 0.8em;
+    }
+
+    /* More */
+
+    .more {
+        margin-bottom: 30px;
+    }
+
+    /* Aside */
+
+    aside {
+        order: -1;
+        width: 100%;
+    }
+
+    .gd {
+        margin: 0 30px 0 20px;
+    }
+
+    .mostpop {
+        display: flex;
+        padding: 0;
+    }
+
+    .mostpop a {
+        flex: 1;
+        margin: 10px;
+    }
+
+    .alignpopular {
+        font-size: 0.8em;
+    }
+
+    .star {
+        margin-top: 25px;
+    }
+
+    .coeur .star {
+        margin-top: 0;
+    }
+
+    .bleu img {
+        width: 199px;
+    }
+    /* Activities */
+
+    .image {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .oneimageone {
+        order: -1;
+        margin-bottom: 30px;
+    }
+
+    .twoimagestwo {
+        order: -1;
+        margin-bottom: 30px;
+    }
+
+    /* Footer */
+
+    footer {
+        justify-content: space-between;
+    }
+
+    .about,
+    .accomodations,
+    .assistance {
+        margin-right: 50px;
     }
 }
 
