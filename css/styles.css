@@ -621,6 +621,7 @@ footer ul li {
     aside {
         order: -1;
         width: 100%;
+        border-radius: 0;
     }
 
     .mostpop {
@@ -631,14 +632,14 @@ footer ul li {
     /* More */
 
     .more {
-        margin-bottom: 0;
+        margin: 0 0 0 15px;
     }
 
     /* Activities */
 
     #activities {
         margin: 50px 0px 0px 0px;
-        padding-left: 10px;
+        padding-left: 8px;
     }
 
     .image {
