@@ -6,7 +6,7 @@
 
 body {
     color: black;
-    margin: auto;
+    margin: 0;
 }
 
 a {
@@ -36,10 +36,6 @@ h1 {
 
 p {
     font-size: 0.9em;
-}
-
-br {
-    display: none;
 }
 
 /* Header */
@@ -83,11 +79,7 @@ header {
 /* Slogan */
 
 #slogan {
-    margin: 50px;
-}
-
-#slogan h1 {
-    margin-bottom: 0px;
+    margin: 30px 0px 20px 50px;
 }
  
 #slogan p {
@@ -145,7 +137,7 @@ header {
 
 .filter {
     display: flex;
-    margin: 20px 0px;
+    margin: 30px 0px;
 }
 
 .filter h1 {
@@ -157,8 +149,9 @@ header {
     color: #0065fc;
     background-color: #deebff;
     border-radius: 30px;
-    margin-left: -1px;
     padding: 20px;
+    margin-top: -3px;
+    margin-bottom: -3px;
 }
 
 .filter label {
@@ -170,8 +163,13 @@ header {
 }
 
 .family i {
-    padding-left: 19px;
-    padding-right: 23px;
+    padding-left: 22px;
+    padding-right: 22px;
+}
+
+.economic i {
+    padding-right: 18px;
+    padding-left: 18px;
 }
 
 .filter input {
@@ -196,10 +194,7 @@ header {
 /* info */
 
 .info {
-    display: flex;
-    align-content: center;
-    text-align: center;
-    vertical-align: middle;
+    margin: 40px 0;
 }
 
 .info p {
@@ -209,8 +204,8 @@ header {
 .fa-info {
     font-size: 0.8em;
     color: #0065fc;
-    padding: 15px 20px;
-    border: 3px solid #d9d9d9;
+    padding: 5px 10px;
+    border: 1px solid #d9d9d9;
     border-radius: 100%;
     margin-right: 10px;
 }
@@ -220,7 +215,6 @@ header {
 #housing {
     display: flex;
     justify-content: space-evenly;
-    margin: 0px 50px;
 }
 
 /* accomodation */
@@ -232,24 +226,23 @@ header {
 #accommodation {
     border-radius: 25px;
     background-color: #f2f2f2;
-    margin-right: 50px;
-    width: 70%;
+    width: 60%;
 }
 
 .acch1 {
     font-size: 1.2em;
-    margin: 35px 0px 0px 35px;
+    margin: 35px 0px 0px 50px;
 }
 
 .hotel {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    padding: 20px;
+    padding-top: 20px;
 }
 
 .hotel a {
-    margin: 0px 10px 30px 10px;
+    margin-bottom: 30px;
     padding-bottom: 5px;
     background-color: #fff;
     border-radius: 25px;
@@ -277,8 +270,8 @@ header {
 
 .more {
     font-weight: bold;
-    margin-bottom: 30px;
-    margin-left: 80px;
+    margin-left: 50px;
+    margin-top: 5px;
 }
 
 .more a:hover {
@@ -297,7 +290,7 @@ aside {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0px 40px 5px 40px;
+    margin: 0px 60px 5px 60px;
     padding-top: 20px;
 }
 
@@ -307,16 +300,16 @@ aside {
 }
 
 .mostpop {
-    padding: 0px 40px;
+    padding: 0px 60px;
 }
 
 .mostpop a {
     display: flex;
-    align-items: center;
     background-color: #fff;
     border-radius: 25px;
     box-shadow: 0 0 2px 2px #dbdbdb;
     margin-bottom: 32px;
+    padding-right: 15px;
 }
 
 .mostpop a h1 {
@@ -329,10 +322,11 @@ aside {
 
 .alignpopular {
     padding-left: 20px;
+    margin-top: 15px;
 }
 
 .star {
-    margin-top: 20px;
+    margin-top: 30px;
 }
 
 .mostpop img {  
@@ -342,9 +336,10 @@ aside {
     padding: 5px; 
 }
 
-.bleu img {
+/*.bleu img {
     width: 180px;
-}
+}*/
+
 /* activities */
 
 #activities {
@@ -376,12 +371,12 @@ aside {
     display: flex;
 }
 
- .oneimage img {
-     width: 300px;
-     height: 390px;
-     border-radius: 25px 25px 0 0;
-     object-fit: cover;
- }
+.oneimage img {
+    width: 300px;
+    height: 390px;
+    border-radius: 25px 25px 0 0;
+    object-fit: cover;
+}
 
  .twoimages img {
      object-fit: cover;
@@ -440,15 +435,6 @@ footer ul li {
     margin-bottom: 20px;
 }
 
-/* For Big Screen */
-
-@media screen and (min-width: 1199px)
-{
-    body {
-        max-width: 1440px;
-    }
-}
-
 /* Responsive Tablet */
 
 @media screen and (max-width: 991px)
@@ -481,12 +467,6 @@ footer ul li {
 
 @media screen and (max-width: 768px) {
    
-    /* General*/
-
-    br {
-        display: block;
-    }
-
     /* header */
 
     header {
