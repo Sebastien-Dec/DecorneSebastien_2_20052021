@@ -4,6 +4,10 @@
     font-family: 'Raleway', sans-serif;
 }
 
+.container {
+     margin: 0 50px;
+ }
+
 body {
     color: black;
     margin: 0;
@@ -33,7 +37,9 @@ ul {
 h1 {
     font-size: 1em;
 }
-
+h2 {
+    font-size : 1em;
+}
 p {
     font-size: 0.9em;
 }
@@ -42,11 +48,11 @@ p {
 
 header {
     display: flex;
-    margin: 0px 50px;
     justify-content: space-between;
 }
+
 .logo {
-    margin-top: 50px;
+    align-self: center;
 }
 
 .navbar ul {
@@ -79,7 +85,8 @@ header {
 /* Slogan */
 
 #slogan {
-    margin: 30px 0px 20px 50px;
+    margin: 30px 0;
+    font-size: 1.2em;
 }
  
 #slogan p {
@@ -90,11 +97,11 @@ header {
 
 #search {
     margin-top: 20px;
-    margin-left: 50px;
 }
 
 .inputsearch {
     display: flex;
+    position: relative;
 }
 
 .mapmarker {
@@ -219,39 +226,35 @@ header {
 
 /* accomodation */
 
-.price {
-    font-weight: bold;
-}
-
 #accommodation {
     border-radius: 25px;
     background-color: #f2f2f2;
-    width: 60%;
+    width: 70%;
 }
 
 .acch1 {
     font-size: 1.2em;
-    margin: 35px 0px 0px 50px;
+    margin: 35px 0px 0px 30px;
 }
 
 .hotel {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
     padding-top: 20px;
 }
 
 .hotel a {
     margin-bottom: 30px;
+    margin-left: 30px;
     padding-bottom: 5px;
     background-color: #fff;
     border-radius: 25px;
-    box-shadow: 0 0 2px 2px #dbdbdb;
+    box-shadow: 0 0 2px 2px #f2f2f2;
 }
 
-.hotel a h1,
+.hotel a h2,
 .hotel a p {
-    margin: 0px 0px 4px 20px;
+    margin: 0px 0px 5px 20px;
 }
 
 .accstar {
@@ -260,8 +263,8 @@ header {
 
 .hotel a img {
     object-fit: cover;
-    width: 237px;
-    height: 115px;
+    width: 289px;
+    height: 140px;
     border-radius: 25px 25px 0 0;
     padding: 5px;
 }
@@ -270,7 +273,7 @@ header {
 
 .more {
     font-weight: bold;
-    margin-left: 50px;
+    margin-left: 30px;
     margin-top: 5px;
 }
 
@@ -284,6 +287,7 @@ aside {
     background-color: #f2f2f2;
     border-radius: 25px;
     width: 30%;
+    margin-left: 30px;
 }
 
 .gd {
@@ -300,16 +304,16 @@ aside {
 }
 
 .mostpop {
-    padding: 0px 60px;
+    padding: 0px 30px;
 }
 
 .mostpop a {
     display: flex;
     background-color: #fff;
     border-radius: 25px;
-    box-shadow: 0 0 2px 2px #dbdbdb;
-    margin-bottom: 32px;
-    padding-right: 15px;
+    box-shadow: 0 0 2px 2px #f2f2f2;
+    margin-bottom: 30px;
+    width: 100%;
 }
 
 .mostpop a h1 {
@@ -317,7 +321,7 @@ aside {
 }
 
 .mostpop a p {
-    margin-top: 5px;
+    line-height: 0;
 }
 
 .alignpopular {
@@ -327,9 +331,10 @@ aside {
 
 .mostpop img {  
     width: 140px;
-    height: 130px;
+    height: 150px;
     border-radius: 25px 0 0 25px;
     padding: 5px; 
+    object-fit: cover;
 }
 
 .star {
@@ -343,7 +348,7 @@ aside {
 /* activities */
 
 #activities {
-    margin: 70px 50px 60px 50px;
+    margin: 70px 0 60px 0;
 }
 
 #activities h1 {
@@ -364,15 +369,21 @@ aside {
 .twoimages>a {
     border: 1px solid #f2f2f2;
     border-radius: 25px;
-    box-shadow: 0 0 2px 2px #f4f4f4;
+    box-shadow: 0 0 2px 2px #f2f2f2;
 }
 
 .oneimage {
     display: flex;
+    width: 25%;
+    margin-right: 15px;
+}
+
+.oneimagetwo {
+    margin-left: 15px;
 }
 
 .oneimage img {
-    width: 300px;
+    width: 100%;
     height: 390px;
     border-radius: 25px 25px 0 0;
     object-fit: cover;
@@ -386,28 +397,29 @@ aside {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 25%;
 }
 
 .fort img {
-    width: 300px;
+    width: 100%;
     height: 180px;
     border-radius: 25px 25px 0 0;
 }
 
 .frioul img {
-    width: 300px;
+    width: 100%;
     height: 110px;
     border-radius: 25px 25px 0 0;
 }
 
 .garde img {
-    width: 300px;
+    width: 100%;
     height: 142px;
     border-radius: 25px 25px 0 0;
 }
 
 .longchamp img {
-    width: 300px;
+    width: 100%;
     height: 152px;
     border-radius: 25px 25px 0 0;
 }
@@ -445,7 +457,8 @@ footer ul li {
     }
 
     .filter label {
-        font-size: small;
+        font-size: 0.9em;
+        margin-top: 10px;
     }
 
     .filter h1 {
@@ -464,7 +477,6 @@ footer ul li {
 
     #housing {
         flex-direction: column;
-        margin: 0 50px;
     }
     /* Accommodation */
 
@@ -474,9 +486,13 @@ footer ul li {
     }
 
     .hotel {
-        font-size: 0.8em;
+        font-size: 1em;
+        justify-content: space-evenly;
     }
 
+    .hotel a {
+        margin-left: 0;
+    }
     /* More */
 
     .more {
@@ -488,28 +504,34 @@ footer ul li {
     aside {
         order: -1;
         width: 100%;
-    }
-
-    .gd {
-        margin: 0 30px 0 20px;
+        margin-left: 0;
     }
 
     .mostpop {
         display: flex;
-        padding: 0;
+        padding: 0 50px;
+        align-items: center;
+        flex-direction: column;
     }
 
+    .gd {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
     .mostpop a {
-        flex: 1;
-        margin: 10px;
+        margin: 5px;
+        width: 60%;
     }
 
     .alignpopular {
-        font-size: 0.8em;
+        font-size: 1.2em;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     .star {
-        margin-top: 25px;
+        margin-bottom: 10px;
     }
 
     .coeur .star {
@@ -525,6 +547,14 @@ footer ul li {
     .image {
         flex-wrap: wrap;
         justify-content: space-evenly;
+    }
+
+    .oneimage {
+        width: 45%;
+    }
+
+    .twoimages {
+        width: 45%;
     }
 
     .oneimageone {
@@ -566,6 +596,10 @@ footer ul li {
         padding-bottom: 16px;
     }
 
+    .active a {
+        color: #0065fc;
+    }
+
     .logo {
         position: relative;
         left: 20px;
@@ -584,6 +618,7 @@ footer ul li {
         text-align: center;
         padding: 10px;
     }
+
     .activities {
         border-bottom: 5px solid #f2f2f2;
     }
@@ -627,11 +662,23 @@ footer ul li {
     }
 
     .inputsearch input {
-        padding: 10px;
+        padding: 20px;
+        border-right: none;
+    }
+
+    .mapmarker {
+        padding: 25px;
     }
 
     .searchbutton {
         display: none;
+    }
+
+    .desktop {
+        border-radius: 15px;
+        padding: 25px;
+        position: relative;
+        right: 13px;
     }
 
     .desktop .fa-search {
@@ -646,10 +693,9 @@ footer ul li {
 
     .filter label {
         margin-top: 20px;
-        left: 0;
-        margin-right: 0;
-        font-size: small;
+        margin-right: 10px;
     }
+
     .filter h1 {
         width: 100%;
     }
@@ -666,20 +712,18 @@ footer ul li {
 
     .info {
         text-align: left;
-        font-size: 1.1em;
+        font-size: 1.2em;
     }
 
     .fa-info {
         float: left;
-        font-size: 0.5em;
-        color: #0065fc;
-        padding: 5px;
-        border: 3px solid #d9d9d9;
-        border-radius: 100%;
-        margin-right: 5px;
     }
 
     /* Housing */
+
+    .container {
+        margin: 0;
+    }
 
     #housing {
         display: flex;
@@ -701,8 +745,12 @@ footer ul li {
         padding: 0;
     }
 
+    .hotel a {
+        width: 95%;
+    }
+
     .hotel a img {
-        width: 335px;
+        width:98%;
     }
 
     aside {
@@ -712,12 +760,22 @@ footer ul li {
     }
 
     .mostpop {
-        padding: 10px;
+        padding: 20px;
         flex-direction: column;
     }
 
-    .alignpopular {
-        font-size: 1em;
+    .mostpop a {
+        width: 100%
+    }
+
+    .alignpopular-group {
+        position: relative;
+        bottom: 20px;
+    }
+
+    .star {
+        margin-top: 0;
+        font-size: 0.7em;
     }
 
     .bleu img {
@@ -732,13 +790,15 @@ footer ul li {
 
     /* Activities */
 
-    #activities {
-        margin: 50px 0px 0px 0px;
-        padding-left: 8px;
-    }
-
     .image {
         flex-direction: column;
+    }
+
+    .oneimage, 
+    .twoimages {
+        width: 95%;
+        margin-left: 5px;
+        margin-bottom: 0px;
     }
 
     .oneimage>a,
@@ -748,12 +808,12 @@ footer ul li {
 
     .oneimage a img,
     .twoimages a img {
-        width: 360px;
+        width: 100%;
         height: 135px;
     }
 
     .twoimages a {
-        width: 360px;
+        width: 100%;
         margin-bottom: 20px;
     }
 
@@ -765,9 +825,9 @@ footer ul li {
     }
 
     .about,
-.accomodations,
-.assistance {
-    margin-right: 0;
-}
+    .accomodations,
+    .assistance {
+        margin-right: 0;
+    }
 
 }
