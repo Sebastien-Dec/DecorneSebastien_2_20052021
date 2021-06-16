@@ -596,13 +596,12 @@ footer ul li {
     }
     
     .active {
-        border-bottom: 3px solid #0065fc;
-        padding-bottom: 16px;
+        border-bottom: 3px solid #f2f2f2;
     }
 
-    .active a {
+    /*.active a {
         color: #0065fc;
-    }
+    }*/
 
     .logo {
         position: relative;
@@ -624,7 +623,7 @@ footer ul li {
     }
 
     .activities {
-        border-bottom: 5px solid #f2f2f2;
+        border-bottom: 3px solid #f2f2f2;
     }
 
     .navbar ul li:nth-child(3) {
@@ -633,18 +632,15 @@ footer ul li {
         top: 20px;
     }
 
-    .navbar a:hover {
-        border-bottom: 3px solid #0065fc;
-        padding-bottom: 16px;
-    }
-
     .accomodation:hover,
     .activities:hover {
         border-top: 0;
+        border-bottom: 3px solid #0065fc;
     }
 
     .login:hover {
         border: none;
+        border-bottom: none;
     }
 
     /* Slogan */
