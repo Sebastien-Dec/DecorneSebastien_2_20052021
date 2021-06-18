@@ -60,7 +60,7 @@ header {
 
 .logo {
     align-self: center;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 .navbar ul {
@@ -69,17 +69,19 @@ header {
 }
 
 .navbar ul li {
-    margin-left: 40px;
-    padding: 50px 15px 0px 15px;
+    padding: 50px 35px 0px 35px;
 }
 
-.accomodation:hover,
-.activities:hover {
-    border-top: 1px solid #0065fc;
+.navbar ul li:hover {
+    border-top: 2px solid #0065fc;
 }
 
-.navbar a:hover {
+.active a {
     color: #0065fc;
+}
+
+.active {
+    border-top: 2px solid #0065fc;
 }
 
 .login a {
@@ -148,6 +150,7 @@ header {
 
 .filter {
     display: flex;
+    flex-wrap: wrap;
     margin: 30px 0px;
 }
 
@@ -171,6 +174,7 @@ header {
     border-left: none;
     left: 25px;
     margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 .family i {
@@ -205,7 +209,7 @@ header {
 /* info */
 
 .info {
-    margin: 40px 0;
+    margin: 20px 0 40px 0;
 }
 
 .info p {
@@ -244,16 +248,16 @@ header {
 .hotel {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
     padding-top: 20px;
 }
 
 .hotel a {
-    margin-bottom: 30px;
-    margin-left: 30px;
     padding-bottom: 5px;
+    margin: 5px 5px 30px 5px;
     background-color: #fff;
     border-radius: 25px;
-    box-shadow: 0 0 15px 10px #ececec;
+    box-shadow: 0 0 5px 5px #ececec;
 }
 
 .hotel a h2,
@@ -278,8 +282,7 @@ header {
 
 .more {
     font-weight: bold;
-    margin-left: 30px;
-    margin-top: 5px;
+    margin: 5px 0 30px 30px;
 }
 
 .more a:hover {
@@ -299,7 +302,7 @@ aside {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 0px 60px 5px 60px;
+    margin: 0px 30px 5px 30px;
     padding-top: 20px;
 }
 
@@ -330,6 +333,12 @@ aside {
     padding-left: 20px;
     padding-right: 30px;
     width: 40%;
+    position: relative;
+}
+
+.alignpopular-group {
+    position: absolute;
+    padding-right: 10px;
 }
 
 .mostpop img {  
@@ -340,7 +349,8 @@ aside {
 }
  
 .star {
-    margin-top: 35%;
+    position:absolute;
+    bottom: 10px;
 }
 
 /* activities */
@@ -426,19 +436,13 @@ aside {
 
 footer {
     display: flex;
-    justify-content: space-evenly;
-    padding-left: 10px;
+    justify-content: space-between;
+    padding: 40px 55px 0 50px;
     background-color: #f2f2f2;
 }
 
-.about,
-.accomodations,
-.assistance {
-    margin-right: 300px;
-}
-
-footer h1 {
-    margin-top: 40px;
+footer div {
+    width: 30%;
 }
 
 footer ul {
@@ -520,8 +524,8 @@ footer ul li {
     }
 
     .gd {
-        margin-left: 15px;
-        margin-right: 15px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     .mostpop a {
@@ -596,12 +600,9 @@ footer ul li {
     }
     
     .active {
-        border-bottom: 3px solid #f2f2f2;
+        border-bottom: 3px solid #0065fc;
+        border-top: none;
     }
-
-    /*.active a {
-        color: #0065fc;
-    }*/
 
     .logo {
         position: relative;
@@ -626,9 +627,9 @@ footer ul li {
         border-bottom: 3px solid #f2f2f2;
     }
 
-    .navbar ul li:nth-child(3) {
+    .login  {
         position: absolute;
-        right: 0;
+        left: 57%;
         top: 20px;
     }
 
@@ -668,9 +669,11 @@ footer ul li {
         padding: 0 50px 0 35px;
         border-right: none;
         border-left: none;
+        width: 100%;
     }
 
     .mapmarker {
+        margin-left: 5px;
         padding: 13px 17px 20px 16px;
         font-size: 1.3em;
     }
@@ -698,7 +701,7 @@ footer ul li {
     }
 
     .filter label {
-        margin-top: 20px;
+        margin-top: 0px;
         margin-right: 10px;
     }
 
@@ -741,6 +744,7 @@ footer ul li {
     }
 
     .acch1 {
+        margin-left: 15px;
         margin-bottom: 20px;
     }
 
@@ -779,7 +783,7 @@ footer ul li {
     }
 
     .star {
-        margin-bottom: 10%;
+        margin-bottom: 10px;
     }
 
     /* More */
@@ -832,5 +836,11 @@ footer ul li {
     footer {
         flex-direction: column;
         padding-left: 20px;
+    }
+
+    .about, 
+    .accomodations, 
+    .assistance {
+        width:100%;
     }
 }
