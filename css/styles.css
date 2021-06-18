@@ -313,6 +313,7 @@ aside {
 
 .mostpop {
     padding: 0px 30px;
+    height: 100%;
 }
 
 .mostpop a {
@@ -322,7 +323,7 @@ aside {
     box-shadow: 0 0 15px 10px #ececec;
     margin-bottom: 30px;
     width: 100%;
-    height: 160px;
+    height: 25%;
 }
 
  .mostpop a p {
@@ -331,14 +332,10 @@ aside {
 
 .alignpopular {
     padding-left: 20px;
-    padding-right: 30px;
     width: 40%;
-    position: relative;
-}
-
-.alignpopular-group {
-    position: absolute;
-    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .mostpop img {  
@@ -349,8 +346,7 @@ aside {
 }
  
 .star {
-    position:absolute;
-    bottom: 10px;
+    margin-bottom: 10px;
 }
 
 /* activities */
@@ -518,9 +514,10 @@ footer ul li {
 
     .mostpop {
         display: flex;
-        padding: 0 50px;
         align-items: center;
         flex-direction: column;
+        padding: 0;
+        margin-bottom: 40px;
     }
 
     .gd {
@@ -530,26 +527,18 @@ footer ul li {
 
     .mostpop a {
         margin: 5px;
-        width: 60%;
+        width: 80%;
         box-shadow: none;
     }
 
-    .mostpop>img {
-        width: 40%;
+    .mostpop img {
+        height: 140px;
     }
 
     .alignpopular {
         font-size: 1.2em;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
     }
     
-    .star {
-        margin-top: 0;
-        margin-bottom: 5%;
-    }
-
     /* Activities */
 
     .image {
@@ -771,15 +760,13 @@ footer ul li {
     .mostpop {
         padding: 20px;
         flex-direction: column;
+        margin-bottom: 20px;
     }
 
     .mostpop a {
         width: 100%;
         box-shadow: none;
-    }
-
-    .alignpopular {
-        font-size: 1em;
+        margin-bottom: 15px;
     }
 
     .star {
