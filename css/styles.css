@@ -531,7 +531,7 @@ footer ul li {
     }
 
     .mostpop img {
-        height: 140px;
+        height: 155px;
     }
 
     .alignpopular {
@@ -619,7 +619,7 @@ footer ul li {
 
     .login  {
         position: absolute;
-        right: 0px;
+        left: 70%;
         top: 30px;
         padding-top: 0 !important;
     }
@@ -784,7 +784,7 @@ footer ul li {
     /* Activities */
 
     #activities {
-        margin: 60px 10px 50px 15px;
+        margin: 60px 0px 50px 15px;
     }
 
     #activities h1 {
