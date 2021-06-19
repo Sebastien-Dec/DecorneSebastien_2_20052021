@@ -619,7 +619,7 @@ footer ul li {
 
     .login  {
         position: absolute;
-        right: 30px;
+        right: 0px;
         top: 30px;
         padding-top: 0 !important;
     }
@@ -807,6 +807,7 @@ footer ul li {
     .twoimages>a {
         margin-bottom: 30px;
         box-shadow: 0 0 15px 4px #f2f2f2;
+        width: 100%;
     }
     
     .oneimage a img,
