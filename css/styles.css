@@ -243,7 +243,7 @@ header {
 
 .acch1 {
     font-size: 1.2em;
-    margin: 35px 0px 0px 30px;
+    margin: 35px 0px 0px 35px;
 }
 
 .hotel {
@@ -283,7 +283,7 @@ header {
 
 .more {
     font-weight: bold;
-    margin: 5px 0 30px 30px;
+    margin: 5px 0 30px 35px;
 }
 
 .more a:hover {
@@ -488,9 +488,12 @@ footer ul li {
         margin-top: 30px;
     }
 
+    .acch1 {
+        margin-left: 11%;
+    }
+
     .hotel {
-        font-size: 1em;
-        justify-content: space-evenly;
+        margin: 5px;
     }
 
     .hotel a {
@@ -500,6 +503,7 @@ footer ul li {
     /* More */
 
     .more {
+        margin-left: 11%;
         margin-bottom: 30px;
     }
 
@@ -520,8 +524,8 @@ footer ul li {
     }
 
     .gd {
-        margin-left: 20px;
-        margin-right: 20px;
+        margin-left: 10%;
+        margin-right: 10%;
     }
 
     .mostpop a {
@@ -539,6 +543,10 @@ footer ul li {
     }
     
     /* Activities */
+
+    #activities h1 {
+        margin-left: 3%;
+    }
 
     .image {
         flex-wrap: wrap;
@@ -757,6 +765,11 @@ footer ul li {
         order: -1;
         width: 100%;
         border-radius: 0;
+    }
+
+    .gd {
+        margin-left :3%;
+        margin-right: 3%;
     }
 
     .mostpop {
