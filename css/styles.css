@@ -337,6 +337,10 @@ aside {
     justify-content: space-between;
 }
 
+.alignpopular-group {
+    font-size: 1em;
+}
+
 .mostpop img {  
     width: 40%;
     border-radius: 25px 0 0 25px;
