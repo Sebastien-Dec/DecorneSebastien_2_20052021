@@ -638,13 +638,14 @@ footer ul li {
 
     .accomodation:hover,
     .activities:hover {
-        border-top: 0;
+        border-top: none;
         border-bottom: 3px solid #0065fc;
     }
 
     .login:hover {
         border: none;
         border-bottom: none;
+        border-top: none;
     }
 
     /* Slogan */
